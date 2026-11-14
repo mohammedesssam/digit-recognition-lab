@@ -52,7 +52,7 @@ Model: 64 inputs -> 64 ReLU hidden units -> 10 logits. Adam, learning rate .003,
 
 The SVM performs better. The served model is deliberately and explicitly the PyTorch network for neural-inference demonstration, not a claim that deep learning is always superior. Accuracy is for this historical benchmark only, not arbitrary handwriting/photos or general OCR. No uncertainty calibration, rotation robustness or present-day production guarantee.
 
-![MLP confusion matrix](reports/confusion_matrix.png)
+Plot: `reports/confusion_matrix.png` inside the restored project package.
 
 See exact metrics, hashes, split indices and all held-out predictions in `reports/`. Tests independently reload the PyTorch checkpoint and reproduce **every** held-out class prediction, check source hashes, split separation, recompute metrics, exercise API routes and reject invalid input.
 
